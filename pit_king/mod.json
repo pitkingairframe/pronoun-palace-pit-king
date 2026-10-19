@@ -1,0 +1,9 @@
+{
+	"id": "pit_king",
+	"packs":[
+		{
+			"path":"pit_king.pck",
+			"override":true
+		}
+	]
+}

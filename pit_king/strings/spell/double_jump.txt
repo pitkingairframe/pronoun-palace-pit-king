@@ -1,0 +1,14 @@
+:name:
+	Double Jump
+
+:description:
+	Convert the tiles above and below a selected tile to concrete. 
+
+:label:
+	Adjacent concrete
+
+:charge_category:
+	rare
+
+:max_charge:
+	2

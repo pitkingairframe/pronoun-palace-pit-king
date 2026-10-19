@@ -1,0 +1,34 @@
+:king: {inherits :default:}
+	:title:
+		King
+
+	:name:
+		{"Delta Pawn" if trans}{"Constant" not trans}
+
+	:description:
+		Recognized as a psychotic enemy of the Party. 
+		Desperate to turn over a new leaf.
+
+	:spell_description:
+		Plastic and ivory columns.
+
+	:info_title:
+		Info
+
+	:info:
+		8 turn limit, defeat enemies for extra turns. 
+
+	:sex:
+		{"F" if trans} {"X" not trans}
+
+	:pronouns:
+		she/her
+
+	:height:
+		5-8
+
+	:weight:
+		{"233" if trans}{"178" not trans}
+
+	:occupation:
+		{"JACKRABBIT'S" if trans}{"N/A" not trans}

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://d066nducc7tv6"]
+
+[ext_resource type="Script" uid="uid://c8hxw4v1slimf" path="res://mods/pit_king/mod.gd" id="1_6d1j5"]
+
+[node name="Mod" type="Node" unique_id=1772359245]
+script = ExtResource("1_6d1j5")

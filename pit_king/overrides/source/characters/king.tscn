@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dj3i68kix6vaw"]
+
+[ext_resource type="PackedScene" uid="uid://b6aro6o71syk6" path="res://source/battle_unit/character.tscn" id="1_tcj2a"]
+[ext_resource type="Script" uid="uid://c33l0efe87ycy" path="res://mods/pit_king/overrides/source/characters/king.gd" id="2_ckbbb"]
+[ext_resource type="PackedScene" uid="uid://cwgxm2sx00xxq" path="res://source/characters/sprites/lexicographer_sprite.tscn" id="2_v2uwr"]
+[ext_resource type="Texture2D" uid="uid://c1th1tqx38c2l" path="res://mods/pit_king/arte/characters/PronounPalacePitKing.png" id="3_ckbbb"]
+[ext_resource type="Texture2D" uid="uid://d1geh4on121yf" path="res://mods/pit_king/arte/characters/PronounPalacePitKing_NotTrans.png" id="4_w60dy"]
+
+[node name="Character" unique_id=651432652 instance=ExtResource("1_tcj2a")]
+script = ExtResource("2_ckbbb")
+
+[node name="Sprite" parent="." index="0" unique_id=844123301 instance=ExtResource("2_v2uwr")]
+trans_texture = ExtResource("3_ckbbb")
+base_texture = ExtResource("4_w60dy")
+alt_trans_texture = null
+alt_base_texture = null
+trans_pitch_scale = 1.0
+sound_groups = PackedStringArray()

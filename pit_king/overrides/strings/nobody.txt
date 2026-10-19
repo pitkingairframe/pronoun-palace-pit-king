@@ -1,0 +1,214 @@
+:p:
+	{"." not control}{"$" if control}
+
+# Censor Start
+:c_st:
+	{"[color=#00000044][shake rate=10.0 level=2]" not trans}
+
+# Censor End
+:c_en:
+	{"[/shake][/color]" not trans}
+
+:c_I:
+	{:c_st:}I{:c_en:}
+
+:c_Ill:
+	{:c_st:}I'll{:c_en:} 
+
+:c_Im:
+	{:c_st:}I’m{:c_en:}
+
+:c_me:
+	{:c_st:}me{:c_en:}
+
+:c_my:
+	{:c_st:}my{:c_en:}
+
+:c_You:
+	{:c_st:}You{:c_en:}
+
+:c_you:
+	{:c_st:}you{:c_en:}
+
+:c_your:
+	{:c_st:}your{:c_en:}
+
+:c_youre:
+	{:c_st:}you’re{:c_en:}
+
+:c_Youre:
+	{:c_st:}You’re{:c_en:}
+
+:c_youve:
+	{:c_st:}you’ve{:c_en:}
+
+:c_s:
+	{:c_st:}’s{:c_en:}
+	
+
+:king:
+	:intro:
+		:flags:
+			pre_trans priority first_encounter
+		::
+			Move.
+			:flags:
+				character
+				
+		::
+			[font_size=20]...[/font_size]
+			:flags:
+				nobody
+				
+		::
+			Move or {:c_Ill:} MAKE you. 
+			:flags:
+				character
+				
+		::
+			I don't get why the Party's so afraid of {:c_you:}. 
+			:flags:
+				nobody 
+	
+	:red:
+		:flags:
+			difficulty_9 priority story	
+		::
+			You've had that disguise for an awfully long time. 
+			:flags:
+				nobody
+				
+		::
+			Surely there's an easier way 
+			to escape from the Party than this. 
+			:flags:
+				nobody
+				
+		::
+			You just don't get it.
+			:flags:
+				character
+				
+		::
+			I'm only doing this because I want to.
+			:flags:
+				character
+
+			
+	:hazel:
+		:flags:
+			difficulty_10 priority story non_canon	
+		::
+			You know what happens when you get in {:c_my:} way. 
+			:flags:
+				character
+				
+		::
+			Please, I've watched pink films bloodier than {:c_you:}.
+			:flags:
+				nobody
+				
+		::
+			Do {:c_your:} worst. 
+			:flags:
+				nobody
+			
+	:target:
+		:flags:
+			pre_trans 
+		::
+			{:c_You:} think this is going to make it easier? 
+			:flags:
+				nobody
+				
+		::
+			{:c_Youre:} just putting an even 
+			bigger target on {:c_your:} back.
+			:flags:
+				nobody
+				
+		::
+			You don't know {:c_me:}. 
+			:flags:
+				character
+				
+	:lunch:
+		::
+			If you do what {:c_I:} want quickly, 
+			{:c_I:} MIGHT let you live.
+			:flags:
+				character
+		::
+			Sorry, I'm on break.
+			:flags:
+				nobody
+				
+	:bravery:
+		:flags:
+			post_trans
+		::
+			I'm kind of impressed.
+			:flags:
+				character
+				
+		::
+			Haven't even tried calling 
+			the new cops on me. 
+			:flags:
+				character
+				
+		::
+			Don't flatter yourself.
+			:flags:
+				nobody
+				
+		::
+			You're nicer than my boss.
+			:flags:
+				nobody
+				
+	:hair:
+		:flags:
+			post_trans 
+		::
+			Your hair is nice.
+			:flags:
+				nobody
+				
+		::
+			[font_size=20]...[/font_size]
+			:flags:
+				character
+				
+		::
+			Thanks you.
+			:flags:
+				character
+				
+	:together:
+		:flags:
+			post_trans 
+		::
+			You could come with me, 
+			you know.
+			:flags:
+				character
+				
+		::
+			Us girls gotta stick togethe{"r." not control}
+			:flags:
+				character cutoff
+		::
+			Who are you, again?
+			:flags:
+				nobody
+				
+		::
+			Oh...
+			:flags:
+				character
+				
+		::
+			Alright.
+			:flags:
+				character

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://5k6e357vihol"]
+
+[ext_resource type="Script" uid="uid://217x1dh8regu" path="res://mods/pit_king/overrides/source/enemies/nobody/nobody_king.gd" id="1_iq166"]
+[ext_resource type="PackedScene" uid="uid://cm4b24fs5dw04" path="res://source/enemies/sprites/nobody_sprite.tscn" id="2_nvc34"]
+
+[node name="Nobody" type="Node2D" unique_id=10559021]
+script = ExtResource("1_iq166")
+
+[node name="Sprite" parent="." unique_id=1325596975 instance=ExtResource("2_nvc34")]

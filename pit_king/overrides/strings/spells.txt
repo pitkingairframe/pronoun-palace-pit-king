@@ -1,0 +1,4 @@
+:red_letter:
+	:king:
+		Upgrade JP-8 to Boost & Repair.
+		Doesn't affect positive statuses. Tiles with status effects become ash instead of burn.

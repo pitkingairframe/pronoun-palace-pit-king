@@ -1,0 +1,14 @@
+:name:
+	Horned Crown
+
+:description:
+	Convert all plastic tiles to ivory.
+
+:label:
+	Plastic to ivory
+
+:charge_category:
+	rare
+
+:max_charge:
+	2

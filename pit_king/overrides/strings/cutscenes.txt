@@ -1,0 +1,61 @@
+:king:
+	:first_run:
+		:image:
+			fisher_2
+
+		:name:
+			Constant's Letter
+
+		:0:
+			::
+				Constant,
+			::
+				since that is the name the proles have begun to call you,
+
+		:1:
+			This letter formally declares you an enemy of the Party. 
+
+		:2:
+			You will no longer have access to the 
+			benefits or safety the Party provides. 
+		:3:
+			::
+				You have been stripped from our records as a citizen, 
+				your name and pronouns along with it. 
+			::
+				You no longer exist. 
+
+		:4:
+			You had the chance to turn yourself in.  
+
+		:5:
+			The Bureau of Love
+
+	:first_win:
+		:image:
+			jubilist_1
+
+		:name:
+			Delta Pawn’s Letter
+
+		:0:
+			Ms. Pawn,
+
+		:1:
+			We know who you are. 
+
+		:2:
+			You cannot run from the Party forever. 
+
+		:3:
+			Still, we are willing to overlook past transgressions 
+			so long as you keep those transgressions in the past. 
+			
+		:4:
+			::
+				We have erased you from existence once already. 
+			::
+				It would be trivial to do it again.
+
+		:5:
+			The Bureau of Love

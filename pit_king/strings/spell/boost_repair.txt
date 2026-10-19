@@ -1,0 +1,20 @@
+:name:
+	Boost & Repair{"?" if curse "cursed"}
+
+:description:
+	Convert wood to plastic and plastic to ivory. Columns with negative statuses become ash instead. 
+
+:label:
+	Plastic Columns{"?" if curse "cursed"}
+
+:banner:
+	Select a column to modify
+
+:charge_category:
+	auto
+
+:max_charge:
+	1
+
+:flags:
+	lexicographer

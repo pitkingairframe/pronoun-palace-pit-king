@@ -1,0 +1,13 @@
+:king_lock:
+	:name:
+		On The Run
+
+	:description:
+		The board will lock in {count} turn{count plural s}.
+		
+:king_reroll:
+	:name:
+		Lockdown
+
+	:description:
+		Reroll to unlock the board for 2 turns. 
