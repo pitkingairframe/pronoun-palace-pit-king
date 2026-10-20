@@ -26,7 +26,7 @@ func _init():
 			}, 
 			count = {
 				0: 1,
-				3: 2
+				3: 3
 			},
 			next = "board_shear", 
 		}, 
@@ -47,6 +47,7 @@ func _init():
 				0: 2,
 				1: 3,
 				2: 5,
+				3: 6,
 			},
 			acid = {
 				0: 3,
