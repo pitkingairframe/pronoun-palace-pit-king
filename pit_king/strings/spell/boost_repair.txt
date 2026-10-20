@@ -2,7 +2,7 @@
 	Boost & Repair{"?" if curse "cursed"}
 
 :description:
-	Convert wood to plastic and plastic to ivory. Columns with negative statuses become ash instead. 
+	Convert wood to plastic and plastic to ivory inside a selected column. Tiles with negative statuses become ash instead. 
 
 :label:
 	Plastic Columns{"?" if curse "cursed"}

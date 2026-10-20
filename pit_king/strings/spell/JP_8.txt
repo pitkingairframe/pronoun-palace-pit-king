@@ -2,7 +2,7 @@
 	JP-8{"?" if curse "cursed"}
 
 :description:
-	Convert wood to plastic and plastic to ivory. Columns with statuses burn instead. 
+	Convert wood to plastic and plastic to ivory inside a selected column. Tiles with any statuses burn instead. 
 
 :label:
 	Plastic Columns{"?" if curse "cursed"}

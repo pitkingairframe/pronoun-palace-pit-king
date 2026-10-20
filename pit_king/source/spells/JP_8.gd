@@ -1,7 +1,7 @@
 extends Spell
 
 
-var turn_count = 4
+var turn_count = 8
 
 func get_save_data():
 	var save = super.get_save_data()
