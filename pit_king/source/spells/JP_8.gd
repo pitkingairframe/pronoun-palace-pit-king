@@ -48,13 +48,21 @@ func turn_end():
 
 
 func _on_finished_updating_stats(_words):
-	if turn_count > 0 and Game.tile_board.restock_locked == false and Game.enemy.id != Enemies.NOBODY:
+	if turn_count >= 3 and Game.tile_board.restock_locked == false and Game.enemy.id != Enemies.NOBODY:
 		Game.word_builder.add_intent("king_lock",{count = turn_count})
+	elif turn_count > 0 and Game.tile_board.restock_locked == false and Game.enemy.id != Enemies.NOBODY:
+		Game.word_builder.add_intent("red_king_lock",{count = turn_count})
 	elif turn_count == 0 and Game.enemy.id != Enemies.NOBODY:
 		Game.word_builder.add_intent("king_reroll")
 
 func set_status_tooltips():
 	status_tooltips = [{status = TileStatus.ENHANCED, wooden = true}, TileStatus.SPICY]
+	
+
+func get_curse_description() -> String:
+	if curse == CURSE.CURSED:
+		return StringManager.get_string("curse/JP_8")
+	return super.get_curse_description()
 	
 func _use(): 
 	var tile = await get_selection()

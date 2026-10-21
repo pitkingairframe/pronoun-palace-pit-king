@@ -26,7 +26,7 @@ func _init():
 			}, 
 			count = {
 				0: 1,
-				3: 3
+				3: 3,
 			},
 			next = "board_shear", 
 		}, 
@@ -38,7 +38,7 @@ func _init():
 				3: 10,
 			}, 
 			bleed = {
-				0: 6
+				0: 6,
 			}, 
 			next = "small_acid", 
 		}, 
@@ -47,7 +47,6 @@ func _init():
 				0: 2,
 				1: 3,
 				2: 5,
-				3: 6,
 			},
 			acid = {
 				0: 3,

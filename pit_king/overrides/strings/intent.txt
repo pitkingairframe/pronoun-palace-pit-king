@@ -4,6 +4,13 @@
 
 	:description:
 		The board will lock in {count} turn{count plural s}.
+
+:red_king_lock:
+	:name:
+		On The Run
+
+	:description:
+		The board will lock in {count} turn{count plural s}. Defeating enemies gives an extra turn.
 		
 :king_reroll:
 	:name:

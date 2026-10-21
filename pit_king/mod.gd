@@ -33,6 +33,7 @@ func _ready() -> void:
 func _init() -> void:
 	CustomIntent.custom_intent_icons["king_lock"]=load("res://mods/pit_king/arte/intents/LockIntent.png")
 	CustomIntent.custom_intent_icons["king_reroll"]=load("res://mods/pit_king/arte/intents/RerollIntent.png")
+	CustomIntent.custom_intent_icons["king_red_lock"]=load("res://mods/pit_king/arte/intents/RedLockIntent.png")
 	CharacterLoader.add_character("king", "pit_king:JP_8",preload("res://mods/pit_king/arte/characters/PronounPalaceIcons.png"))
 	CharacterLoader.custom_spell_upgrades["pit_king:JP_8"]="pit_king:boost_repair"
 	CharacterLoader.speech_bubbles["king"]=["res://mods/pit_king/arte/bubbles/king_speech_bubble.png","res://mods/pit_king/arte/bubbles/king_speech_bubble_tail.png"]
