@@ -51,7 +51,7 @@ func _on_finished_updating_stats(_words):
 	if turn_count >= 3 and Game.tile_board.restock_locked == false and Game.enemy.id != Enemies.NOBODY:
 		Game.word_builder.add_intent("king_lock",{count = turn_count})
 	elif turn_count > 0 and Game.tile_board.restock_locked == false and Game.enemy.id != Enemies.NOBODY:
-		Game.word_builder.add_intent("red_king_lock",{count = turn_count})
+		Game.word_builder.add_intent("king_red_lock",{count = turn_count})
 	elif turn_count == 0 and Game.enemy.id != Enemies.NOBODY:
 		Game.word_builder.add_intent("king_reroll")
 
