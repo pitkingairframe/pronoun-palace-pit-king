@@ -5,7 +5,7 @@
 	:description:
 		The board will lock in {count} turn{count plural s}.
 
-:red_king_lock:
+:king_red_lock:
 	:name:
 		On The Run
 
