@@ -1,2 +1,2 @@
 :JP_8:
-		Plastic tiles created with the spell are cursed.
+		The selected tile becomes cursed instead. 

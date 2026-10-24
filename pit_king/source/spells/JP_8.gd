@@ -63,15 +63,35 @@ func get_curse_description() -> String:
 	if curse == CURSE.CURSED:
 		return StringManager.get_string("curse/JP_8")
 	return super.get_curse_description()
-	
+
+func is_tile_selectable(tile: Tile) -> bool:
+	return not tile.has_status(TileStatus.SPICY) and not tile.has_status(TileStatus.COAL)
+
 func _use(): 
 	var tile = await get_selection()
 
 	if tile == null:
 		_end_use()
 		return
+	
+	var column = tile.get_coord().x
+	
+	var selected_column
 
-	var selected_column = tile_board.get_column(tile.get_coord().x)
+	if has_curse(CURSE.CURSED):
+		selected_column = get_tiles({
+			columns = [column],
+			sorted = true,
+			exclude_tiles = [tile]
+		})
+		tile.add_status(TileStatus.CURSED)
+		tile.add_poofcloud(tile.get_color())
+		await Game.timeout(0.1)
+	else:
+		selected_column = get_tiles({
+			columns = [column],
+			sorted = true,
+		})
 	
 	AudioManager.play_sound(Sounds.SPELLS.SODA_CAN)
 	AudioManager.play_sound(Sounds.SPELLS.MATCH_BOX)
@@ -92,8 +112,6 @@ func _use():
 			
 			else:
 				selection.set_type(TileType.DEFENSE)
-				if has_curse(CURSE.CURSED):
-					selection.add_status(TileStatus.CURSED)
 				selection.add_poofcloud(selection.get_color())
 			
 			

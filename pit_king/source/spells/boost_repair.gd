@@ -10,8 +10,25 @@ func _use():
 	if tile == null:
 		_end_use()
 		return
+	
+	var column = tile.get_coord().x
+	
+	var selected_column
 
-	var selected_column = tile_board.get_column(tile.get_coord().x)
+	if has_curse(CURSE.CURSED):
+		selected_column = get_tiles({
+			columns = [column],
+			sorted = true,
+			exclude_tiles = [tile]
+		})
+		tile.add_status(TileStatus.CURSED)
+		tile.add_poofcloud(tile.get_color())
+		await Game.timeout(0.1)
+	else:
+		selected_column = get_tiles({
+			columns = [column],
+			sorted = true,
+		})
 	
 	AudioManager.play_sound(Sounds.SPELLS.SODA_CAN)
 	AudioManager.play_sound(Sounds.SPELLS.MATCH_BOX)
@@ -34,8 +51,6 @@ func _use():
 			
 			else:
 				selection.set_type(TileType.DEFENSE)
-				if has_curse(CURSE.CURSED):
-					selection.add_status(TileStatus.CURSED)
 				selection.add_poofcloud(selection.get_color())
 			
 			
